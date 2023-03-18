@@ -34,3 +34,6 @@ Installs React Hook Form to handle forms
 `npm i zod`
 `npm i @hookform/resolvers` -> Integrates react-hook-form with zod
 Installs Zod to handle form validation
+
+`npm i axios`
+Installs axios to handle HTTP requests
