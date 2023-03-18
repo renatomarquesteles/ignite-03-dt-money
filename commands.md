@@ -43,3 +43,7 @@ Installs ESLint and Rocketseat ESLint config to standardize the code
 
 `npm i -D eslint-plugin-simple-import-sort`
 Installs simple-import-sort plugin to configure imports sorting
+
+`npx eslint src --ext .tsx,.ts --fix` or
+`npm run lint:fix`
+Fixes linting problems
