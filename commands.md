@@ -27,3 +27,10 @@ Installs the json server to create a fake REST API
 [-p 3333] change server port
 [-d 500] add a 500ms delay to the response
 Runs the json server
+
+`npm i react-hook-form`
+Installs React Hook Form to handle forms
+
+`npm i zod`
+`npm i @hookform/resolvers` -> Integrates react-hook-form with zod
+Installs Zod to handle form validation

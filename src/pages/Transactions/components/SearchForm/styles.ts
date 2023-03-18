@@ -31,7 +31,12 @@ export const Container = styled.form`
     transition: all 0.3s;
     cursor: pointer;
 
-    &:hover {
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
       background: ${(props) => props.theme['green-500']};
       border-color: ${(props) => props.theme['green-500']};
       color: ${(props) => props.theme.white};
