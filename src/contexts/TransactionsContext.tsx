@@ -27,7 +27,9 @@ export const TransactionsProvider = ({
   const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   const fetchTransactions = async (query?: string) => {
-    const response = await api.get('/transactions', { params: { q: query } });
+    const response = await api.get('/transactions', {
+      params: { q: query, _sort: 'createdAt', _order: 'desc' },
+    });
 
     setTransactions(response.data);
   };
