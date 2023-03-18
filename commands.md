@@ -18,3 +18,12 @@ Installs the radix dialog component to have accessible dialogs
 
 `npm i @radix-ui/react-radio-group`
 Installs the radix radio group component to have accessible radio buttons
+
+`npm i json-server -D`
+Installs the json server to create a fake REST API
+
+`npx json-server server.json`
+[-w] watch for changes
+[-p 3333] change server port
+[-d 500] add a 500ms delay to the response
+Runs the json server
