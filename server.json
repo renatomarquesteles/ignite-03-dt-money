@@ -13,7 +13,7 @@
       "description": "Hamburguer",
       "type": "outcome",
       "category": "Food",
-      "price": 19.90,
+      "price": 19.9,
       "createdAt": "2023-03-17T16:10:20.365Z"
     },
     {
@@ -23,6 +23,14 @@
       "category": "Education",
       "price": 1980,
       "createdAt": "2023-03-17T16:10:20.365Z"
+    },
+    {
+      "category": "Vehicles",
+      "description": "Car refueling",
+      "price": 20,
+      "type": "outcome",
+      "createdAt": "2023-03-18T20:38:27.618Z",
+      "id": 4
     }
   ]
 }
