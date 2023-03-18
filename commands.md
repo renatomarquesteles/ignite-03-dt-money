@@ -37,3 +37,9 @@ Installs Zod to handle form validation
 
 `npm i axios`
 Installs axios to handle HTTP requests
+
+`npm i eslint @rocketseat/eslint-config -D`
+Installs ESLint and Rocketseat ESLint config to standardize the code
+
+`npm i -D eslint-plugin-simple-import-sort`
+Installs simple-import-sort plugin to configure imports sorting
