@@ -25,3 +25,7 @@ If the component's HTML isn't large enough, using Memo can actually degrade perf
 and unnecessarily increase code complexity
 
 That happens because the React HTML recreation can be faster than the hooks/props comparison itself
+
+The useMemo hook is the same as Memo, but for the component's variables
+- It should be used for variables that take a long time to proccess to get a result
+  - usually involves calculatings

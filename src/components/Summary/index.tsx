@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+
 import { ArrowCircleDown, ArrowCircleUp, CurrencyDollar } from 'phosphor-react';
 import { useContextSelector } from 'use-context-selector';
 
@@ -12,19 +14,23 @@ export const Summary = () => {
     (context) => context.transactions
   );
 
-  const summary = transactions.reduce(
-    (acc, transaction) => {
-      if (transaction.type === 'income') {
-        acc.inflows += transaction.price;
-        acc.total += transaction.price;
-      } else {
-        acc.outflows += transaction.price;
-        acc.total -= transaction.price;
-      }
+  const summary = useMemo(
+    () =>
+      transactions.reduce(
+        (acc, transaction) => {
+          if (transaction.type === 'income') {
+            acc.inflows += transaction.price;
+            acc.total += transaction.price;
+          } else {
+            acc.outflows += transaction.price;
+            acc.total -= transaction.price;
+          }
 
-      return acc;
-    },
-    { inflows: 0, outflows: 0, total: 0 }
+          return acc;
+        },
+        { inflows: 0, outflows: 0, total: 0 }
+      ),
+    [transactions]
   );
 
   return (
