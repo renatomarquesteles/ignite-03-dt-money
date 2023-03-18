@@ -1,6 +1,5 @@
-import { useContext } from 'react';
-
 import { ArrowCircleDown, ArrowCircleUp, CurrencyDollar } from 'phosphor-react';
+import { useContextSelector } from 'use-context-selector';
 
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { priceFormatter } from '../../utils/formatter';
@@ -8,7 +7,10 @@ import { priceFormatter } from '../../utils/formatter';
 import { Card, Container } from './styles';
 
 export const Summary = () => {
-  const { transactions } = useContext(TransactionsContext);
+  const transactions = useContextSelector(
+    TransactionsContext,
+    (context) => context.transactions
+  );
 
   const summary = transactions.reduce(
     (acc, transaction) => {

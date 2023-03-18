@@ -47,3 +47,6 @@ Installs simple-import-sort plugin to configure imports sorting
 `npx eslint src --ext .tsx,.ts --fix` or
 `npm run lint:fix`
 Fixes linting problems
+
+`npm i use-context-selector scheduler`
+Installs use-context-selector to improve performance by avoiding unnecessary renderings when context changes
